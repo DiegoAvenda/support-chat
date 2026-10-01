@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply h-full;
+  }
+  body {
+    @apply h-full bg-slate-100 font-sans antialiased;
+  }
+  #root {
+    @apply h-full;
+  }
+}
+
+/* Custom scrollbar for the message panel */
+.messages-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.messages-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.messages-scroll::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full;
+}
+.messages-scroll::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-400;
+}
